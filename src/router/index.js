@@ -21,12 +21,12 @@ const router = createRouter({
       component: () => import('../views/AboutView.vue')
     },
     {
-      path: '/business',
+      path: '/businesses',
       name: 'businessIndex',
       component: BusinessIndex,
     },
     {
-      path: '/business/:businessId',
+      path: '/businesses/biz/:businessId',
       name: 'businessDetail',
       component: BusinessDetail
     },

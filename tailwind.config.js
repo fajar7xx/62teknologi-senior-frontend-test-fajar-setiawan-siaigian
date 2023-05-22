@@ -5,8 +5,24 @@ module.exports = {
     "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    // screen: {
+    //   sm: "576px",
+    //   md: "768px",
+    //   lg: "992px",
+    //   xl: "1200px",
+    // },
+    container: {
+      center: true,
+      padding: "1rem",
+    },
+    extend: {
+      colors: {
+        primary: "#fd3d57",
+      },
+    },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
 }
 
